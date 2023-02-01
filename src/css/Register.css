@@ -1,0 +1,36 @@
+
+
+.inputsRegister{
+width: 100%;
+height: 50%;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: space-around;
+
+}
+
+.inputRegister{
+    display: block;
+    height: 30px;
+    width: 60%;
+    border-radius: 15px;
+}
+
+.genderInputs{
+    width: 60%;
+    margin: auto;
+    margin-top: 15px;
+    margin-bottom: 15px;
+
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.inputDateBirth{
+    width: 200px;
+}
+.inputDateBirthYear{
+    width: 60px;
+}

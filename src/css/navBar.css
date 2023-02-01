@@ -1,0 +1,19 @@
+.navBar{
+    border: salmon solid 1px;
+    display: flex;
+    justify-content: space-between;
+    height: 60px;
+    margin: auto;
+    padding: 20px 15px 0 15px;
+    align-items: center;
+    background-color: rgb(95, 197, 95);
+}
+
+.navBar button{
+    width: 30px;
+    height: 30px;
+
+}
+.iconNavBar{
+    width: 100%;
+}

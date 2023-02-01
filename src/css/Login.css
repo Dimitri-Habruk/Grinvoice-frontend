@@ -1,0 +1,66 @@
+.Login{
+    margin: auto;
+    margin-top: 10px;
+    border-radius: 3;
+    width: 420px;
+    height: 840px;
+    background-image: url('./backiphone.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: flex;
+    z-index: 0;
+
+}
+
+
+.workContain{
+    z-index: 1;
+    background-color: rgb(214, 244, 233);
+    margin-top: 53px;
+    margin-left: 23px;
+    width: 370px;
+    height: 767px;
+    border-top-right-radius: 3px ;
+    border-top-left-radius: 3px ;
+    border-bottom-right-radius: 45px ;
+    border-bottom-left-radius: 45px ;
+}
+
+.logoPageLogin{
+    width: 100%;
+    margin-top: 2vh;
+}
+
+.loginAndPasswordInputs{
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    border: solid 1px;
+}
+.loginAndPasswordInputs img{
+    width: 40px;
+}
+.loginInput, .passwordInput{
+    display: flex; 
+height: 40px;
+    flex-direction: row;
+}
+
+.LoginAndForgotPass{
+    border: 1px solid ;
+    width: 50%;
+    height: 100px;
+    margin-left: 50%;
+}
+.LoginAndForgotPass button{
+    width: 8b0px;
+    height: 30px;
+}
+.totalLogin, .taxesForgotPass{
+display: flex; 
+}
+.or{
+    margin-right: 80%;
+}

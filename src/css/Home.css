@@ -1,0 +1,75 @@
+.Home{
+    height: 100%;
+    border: 1px solid bisque;
+}
+.photoScanUpload{
+    width: 100%;
+    margin-bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    align-content: center;
+    border: 1px dotted grey;
+
+}
+.photoButton, .scanButton, .uploadButton{
+    /* border: 0; */
+    /* background: 0; */
+}
+
+
+.photoImg, .uploadImg{
+    width: 60px;
+}
+
+.scanImg{
+    width: 100px;
+}
+
+.categories{
+    display: flex;
+    flex-wrap: wrap;
+/* border: 1px solid red; */
+height: 60%;
+
+}
+.categoryWrap{
+margin: auto;
+
+/* border: 1px solid; */
+width: 31%;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.photoCategories{
+    width: 70px;
+    
+}
+
+.detailsButton{
+    width: 40px;
+    /* height: 40px; */
+}
+.detailsButtonText{
+
+}
+
+.uploadInput{
+    outline: none;
+    display: block;
+    border: 1px red solid;
+    padding: 5px 5px 5px 40px;
+    height: 20px;
+    background-color: black;
+    background-size: auto 90%;
+    /* visibility: hidden; */
+    /* background: url('../assets/uploadIcon.png') no-repeat 3px 1px !important; */
+}
+
+.uploadInput2{
+    background: url('../assets/photoIcon.png') no-repeat 3px 1px;
+    background-size: auto 90%;
+
+}
