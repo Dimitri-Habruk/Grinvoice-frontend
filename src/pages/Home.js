@@ -1,13 +1,27 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import Category from "../components/Category";
 import NavBar from "../components/NavBar";
 import '../css/Home.css'
 import uploadPhoto from '../assets/uploadIcon.png'
+import {GrinvoiceContext} from '../context/GrinvoiceContext'
+
 
 const Home = () => {
+
+    const {value3} = useContext(GrinvoiceContext);
+    const [urlAllUsers, setUrlAllUsers] = value3
     const [category, setCategory] = useState('')
+
+
+
+
+
   return (
     <>
+
+            {/*
+            {userExist ?  }
+            */}
       <div className="Home">
         <div className="workContain">
       <NavBar/>
@@ -44,10 +58,19 @@ const Home = () => {
 
           <div className="photoScanUpload">
           
-          <input type="file" className="uploadInput" value=''/>
-          <input type="submit" className="uploadInput2"/>
+          <form action="">
+          {/* <label htmlFor=""> 0</label> */}
+          <input type="image" className="uploadInput2" />
 
-           {/* <img className='photoImg' src={require("../assets/photoIcon.png")} alt="photoIcon" /> */}
+          </form>
+          <input type="submit"/>
+          <input type="file" className="uploadInput" value=''/>
+          <button>
+          <img className='photoImg' src={require("../assets/photoIcon.png")} alt="photoIcon" />
+          <input type="file"/>
+
+          BOUT IMG</button>
+           <img className='photoImg' src={require("../assets/photoIcon.png")} alt="photoIcon" />
 
             {/* <button className="photoButton"> <img className='photoImg' src={require("../assets/photoIcon.png")} alt="photoIcon" /> </button>
             <button className="scanButton"> <img className='scanImg' src={require("../assets/scanIcon.png")} alt="scanIcon" /> </button>
