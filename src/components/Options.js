@@ -16,6 +16,7 @@ const Options = () => {
 
   const handleLogOut =() =>{
     localStorage.clear()
+    setOptions(false);
     navigate('/login')
   }
 
@@ -38,19 +39,49 @@ const Options = () => {
             height: "770px",
             background: "black",
             position: "absolute",
+            display: 'flex',
+            flexDirection:'column',
+            justifyContent:'space-around',
             right: 0,
             zIndex: "1",
           }}
         >
           <h1>Options</h1>
-          <button onClick={() => optionsOff()}>close Options</button>
-          <button onClick={() => handleLogOut()}>LogOut</button>
+          <button onClick={() => optionsOff()} style={{width:'50px', position:'absolute', top:'20px', right:'10px'}}><img
+            className="photoCategories"
+            src={require("../assets/arrowIcon.png")}
+            style={{transform: 'rotate(180deg)', width:'40px'}}
+            alt="set categories"
+          /></button>
+          <button>
+          <img
+            className="photoCategories"
+            src={require("../assets/categoriesIcon.png")}
+            alt="set categories"
+          /> <p> manage categories</p>
 
-          {/* <img
-            className="ch"
-            src={require("../assets/logoPageLogin.png")}
-            alt="logoPageLogin"
-          /> */}
+          </button>
+          <button>
+          <img
+            className="photoCategories"
+            src={require("../assets/accountIcon.png")}
+            alt="profile parametres"
+          /><p> Account</p>
+
+          </button>
+          <button>
+          <img
+            className="photoCategories"
+            src={require("../assets/parametreIcon.png")}
+            alt="parametres"
+          /><p> Settings</p>
+
+          </button>
+          <button onClick={() => handleLogOut()}><img
+            style={{width:'20px'}}
+            src={require("../assets/logoutIcon.png")}
+            alt="parametres"
+          />LogOut</button>
         </div>
       </div>
     </>

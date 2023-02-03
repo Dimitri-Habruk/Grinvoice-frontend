@@ -7,10 +7,10 @@ import { Route, Routes } from "react-router-dom";
 function App() {
   return (
     <div className="App">
-      <Login />
+      {/* <Login /> */}
 
       <Routes className='testtest'>
-        <Route exact path="/" element={<Home />} />
+        <Route exact path="/" element={<Login />} />
         <Route path="/register" element={<Register />} />
         <Route path="/login" element={<Login />} />        
         <Route path="/home" element={<Home />}/>

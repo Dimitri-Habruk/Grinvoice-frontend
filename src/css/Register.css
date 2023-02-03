@@ -1,3 +1,16 @@
+.Register{
+    margin: auto;
+    margin-top: 10px;
+    border-radius: 3;
+    width: 420px;
+    height: 840px;
+    background-image: url('./backiphone.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: flex;
+    z-index: 0;
+
+}
 
 
 .inputsRegister{

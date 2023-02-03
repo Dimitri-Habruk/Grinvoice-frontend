@@ -1,0 +1,16 @@
+.ticketForm{
+    width: 370px;
+    height: 767px;
+    background: grey;
+    background-color: rgb(214, 244, 233);
+    position: absolute;
+    top: 10px;
+    z-index: 2;
+    border-top-right-radius: 3px ;
+    border-top-left-radius: 3px ;
+    border-bottom-right-radius: 45px ;
+    border-bottom-left-radius: 45px ;
+    
+    margin-top: 53px;
+    
+}

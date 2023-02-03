@@ -1,7 +1,19 @@
 .Home{
-    height: 100%;
-    border: 1px solid bisque;
+    /* height: 100%;
+    border: 1px solid bisque; */
+      margin: auto;
+    margin-top: 10px;
+    border-radius: 3;
+    width: 420px;
+    height: 840px;
+    background-image: url('./backiphone.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: flex;
+    z-index: 0;
 }
+
+
 .photoScanUpload{
     width: 100%;
     margin-bottom: 0;
@@ -47,6 +59,14 @@ justify-content: center;
     width: 70px;
     
 }
+.buttonDepence{
+    display: flex;
+    width: 80%;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+}
+
 
 .detailsButton{
     width: 40px;

@@ -29,13 +29,19 @@ const Filter = () => {
           style={{
             width: "250px",
             height: "770px",
-            background: "yellow",
+            background: "black",
             position: "absolute",
             zIndex: "1",
           }}
         >
           <h1>FILTER</h1>
-          <button onClick={() => filterOff()}>viré filter</button>
+          {/* <button onClick={() => filterOff()}>viré filter</button> */}
+          <button onClick={() => filterOff()} style={{width:'50px', position:'absolute', top:'20px', left:'10px'}}><img
+            className="photoCategories"
+            src={require("../assets/arrowIcon.png")}
+            style={{ width:'40px'}}
+            alt="set categories"
+          /></button>
         </div>
       </div>
     </>

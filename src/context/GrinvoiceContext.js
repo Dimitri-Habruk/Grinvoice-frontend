@@ -7,6 +7,7 @@ export const GrinvoiceController = (props) => {
     const [filter, setFilter] = useState(false)
     const [options, setOptions] = useState(false)
     const [base_url, setBase_url] = useState('http://localhost:5000')
+    const [ticketForm, setTicketForm] = useState(true)
 
 
   return (
@@ -14,7 +15,9 @@ export const GrinvoiceController = (props) => {
       value={{
         value1 : [filter, setFilter],
         value2 : [options, setOptions],
-        value3 : [base_url, setBase_url]
+        value3 : [base_url, setBase_url],
+        value4 : [ticketForm, setTicketForm],
+
         }}>
       
         {/*value2: [isLoading, setIsLoading],

@@ -1,6 +1,8 @@
 import React, { useContext, useState } from "react";
 import { Link } from "react-router-dom";
 import "../css/Register.css";
+import "../css/Home.css";
+
 import { GrinvoiceContext } from "../context/GrinvoiceContext";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
