@@ -98,7 +98,7 @@ const handleClick = (e) =>{
                 alt=""
                 className=""
               />
-              <input type="email"  onChange={(e)=>setEmail(e.target.value)} placeholder="login" />
+              <input type="email"  onChange={(e)=>setEmail(e.target.value)} placeholder="login(email)" />
               <p>One saved Tree</p>
               <img
                 src={require("../assets/loginPageTree.png")}

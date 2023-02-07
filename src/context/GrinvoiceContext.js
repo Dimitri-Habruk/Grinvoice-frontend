@@ -8,6 +8,7 @@ export const GrinvoiceController = (props) => {
     const [options, setOptions] = useState(false)
     const [base_url, setBase_url] = useState('http://localhost:5000')
     const [ticketForm, setTicketForm] = useState(true)
+    const [price, setPrice] = useState("0");
 
 
   return (
@@ -17,11 +18,10 @@ export const GrinvoiceController = (props) => {
         value2 : [options, setOptions],
         value3 : [base_url, setBase_url],
         value4 : [ticketForm, setTicketForm],
+        value5 : [price, setPrice],
 
         }}>
       
-        {/*value2: [isLoading, setIsLoading],
-        value3: [isActive, setActive],*/}
         {props.children}
       
     </GrinvoiceContext.Provider>

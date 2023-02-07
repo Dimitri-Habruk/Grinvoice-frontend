@@ -58,7 +58,7 @@ const Options = () => {
             className="photoCategories"
             src={require("../assets/categoriesIcon.png")}
             alt="set categories"
-          /> <p> manage categories</p>
+          /> <p> Customize categories</p>
 
           </button>
           <button>

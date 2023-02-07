@@ -14,3 +14,16 @@
     margin-top: 53px;
     
 }
+.priceTicket{
+    display: flex;
+    justify-content: space-around;
+    width: 95%;
+    margin: auto;
+    height: 70px;
+    border: rgb(21, 126, 42);
+    background-color: aquamarine;
+}
+
+.price{
+    font-size: 2em;
+}

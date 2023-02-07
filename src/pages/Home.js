@@ -5,6 +5,7 @@ import '../css/Home.css'
 import uploadPhoto from '../assets/uploadIcon.png'
 import {GrinvoiceContext} from '../context/GrinvoiceContext'
 import UploadPhoto from "../components/UploadPhoto";
+import { Link } from "react-router-dom";
 
 
 const Home = () => {
@@ -31,7 +32,7 @@ const Home = () => {
           })}
           */}
           <div className="categories">
-            <div className="categoryWrap"><img className='photoCategories' src={require("../assets/marketCategory.png")} alt="food categories" /></div>
+            <Link to='/allcategories'> <div className="categoryWrap"><img className='photoCategories' src={require("../assets/marketCategory.png")} alt="food categories" /></div></Link>
             <div className="categoryWrap"><img className='photoCategories' src={require("../assets/animalsCategory.png")} alt="food categories" /></div>
             <div className="categoryWrap"><img className='photoCategories' src={require("../assets/restaurentCategory.png")} alt="food categories" /></div>
             <div className="categoryWrap"> <img className='photoCategories' src={require("../assets/carCategory.png")} alt="food categories" /></div>
@@ -55,8 +56,8 @@ const Home = () => {
 
 
           <div className="photoScanUpload">
-          <button className="photoButton"> <img className='photoImg' src={require("../assets/photoIcon.png")} alt="photoIcon" /> </button>
-            <button className="scanButton"> <img className='scanImg' src={require("../assets/scanIcon.png")} alt="scanIcon" /> </button>
+          {/* <button className="photoButton"> <img className='photoImg' src={require("../assets/photoIcon.png")} alt="photoIcon" /> </button> */}
+            {/* <button className="scanButton"> <img className='scanImg' src={require("../assets/scanIcon.png")} alt="scanIcon" /> </button> */}
             {/* <button className="uploadButton"> <img  className='uploadImg' src={require("../assets/uploadIcon.png")} alt="uploadIcon" /> </button> */}
           
           <UploadPhoto />

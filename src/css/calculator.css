@@ -1,0 +1,11 @@
+.Calculator{
+    border: 1px solid red;
+    margin: auto;
+    width: 80%;
+    height: 50%;
+}
+
+.Calculator button{
+    width: 30%;
+    height: 24%;
+}
