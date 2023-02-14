@@ -1,19 +1,16 @@
 import "../css/ticketForm.css";
 import { GrinvoiceContext } from "../context/GrinvoiceContext";
-import React, { useContext, useEffect, useState } from "react";
+import React, { useContext, useState } from "react";
 import Calculator from "./Calculator";
 import Category from "./Category";
-import axios from "axios";
 
-const TicketForm = ({ data, src }) => {
-  const { value5, value3 } = useContext(GrinvoiceContext);
+const TicketForm = ({ newTicketInfo, imageUploadedUrl }) => {
+  const { value5 } = useContext(GrinvoiceContext);
   const [price, setPrice] = value5;
   const [category, setCategory] = useState(false)
   const { value4 } = useContext(GrinvoiceContext);
   const [ticketForm, setTicketForm] = value4;
-  const dataFormat = new Date(data.date);
-  const [base_url, setBase_url] = value3
-  // const [amount, setAmount] = useState(0)
+  const dataFormat = new Date(newTicketInfo.date);
 
 
 
@@ -23,24 +20,13 @@ const TicketForm = ({ data, src }) => {
 
   const ticketFormOff = () => {
     setTicketForm(false);
-    //add delete photo from database if cancel upload
-    //add delete amount (prérempli)from price in Category.js
   };
 
-  const navigateToCattegory =() => {
-    price.length >1 &&  <Category/>
-  }  
-  
   const priceOkChooseCategory = () =>{
-    setCategory(true)
-    
+    setCategory(true)   
+
   }
 
-
-  useEffect(() => {
-    console.log(price);
-    console.log(data)
-  }, [price]);
 
   return (
     <div className="ticketForm">
@@ -64,10 +50,10 @@ const TicketForm = ({ data, src }) => {
 
       {dataFormat.toLocaleDateString("en-US")}
 
-      <h1>{data.name}</h1>
+      <h1>{newTicketInfo.name}</h1>
 
       <div className="priceTicket">
-        <img width={"auto"} height={"100%"} src={src} />
+        <img width={"auto"} height={"100%"} src={imageUploadedUrl} />
         <span className="price">{price}</span>
         <button onClick={deleteLastOne}  style={{ border:'0', backgroundColor:'transparent'}} > <img
           className="photoCategories"
@@ -80,7 +66,8 @@ const TicketForm = ({ data, src }) => {
 
       {price.length >1 && 
       <button onClick={priceOkChooseCategory}> CHOOSE A CATTEGORY</button>}
-      {category && <Category data={data}/>}
+      
+      {category && <Category newTicketInfo={newTicketInfo}/>}
     </div>
   );
 };

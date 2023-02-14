@@ -1,5 +1,4 @@
 import React, { useContext, useState } from "react";
-import { Link } from "react-router-dom";
 import "../css/Register.css";
 import "../css/Home.css";
 
@@ -21,11 +20,7 @@ const Register = () => {
   });
 
   const handleRegister = () => {
-    // e.preventDefault();
-
-    /*axios post sur urlAllUsers avec tout les target value 
-    si confirm Pass false = axios post marche pas
-    */
+  
     axios
       .post(`${base_url}/register`, {
         name: newUser.name,
@@ -34,14 +29,10 @@ const Register = () => {
         password: newUser.password,
       })
       .then((response) => response.data)
-      //   .then(response => {
-      //     localStorage.setItem('usertoken', response.data) // sets a usertoken into the localstorage coming from res.data
-      //     return response.data
-      // })
       .catch((err) => console.error(err));
+    
     navigate(`/login`);
 
-    // console.log(e);
   };
   return (
     <>
@@ -70,7 +61,6 @@ const Register = () => {
                 placeholder="Full name"
                 className="inputRegister"
               />
-              {/* <input type="text" placeholder="Country"  className="inputRegister"/> */}
               <input
                 type="text"
                 onChange={(e) =>
@@ -79,7 +69,6 @@ const Register = () => {
                 placeholder="E-mail"
                 className="inputRegister"
               />
-              {/* <input type="text" placeholder="Phone number"  className="inputRegister"/> */}
               <input
                 type="password"
                 onChange={(e) =>
@@ -105,31 +94,7 @@ const Register = () => {
               {!confirmPassword && <p>Passwords doesn't match</p>}
             </div>
 
-            {/* <div className="genderInputs">
-                <label for="Gender">Gender</label>
-                 <input type="radio" name="gender" value="male"/> Male
-                <input type="radio" name="gender" value="female"/> Female
-    
-            </div> */}
-
-            {/* <div className="dateOfBirthInputs">
-            <label for="Date of birth">Date of birth</label>
-              <input type="date" value="1990-01-01" className="inputDateBirth"/> 
-            </div> */}
-            {/*
-          Gender Male Female
-          Date of birth DD MM YYYY
-          */}
-
-            {/* <div>
-            <input
-              type="checkbox"
-              className="checkboxTerms"
-              name="checkBox Terms & Conditions"
-            />
-            <label for="horns">Agree with Terms & Conditions</label>
-          </div> */}
-
+            
             {confirmPassword && <button type="submit"> Create account</button>}
             {!confirmPassword && <button disabled>Create account </button>}
           </form>

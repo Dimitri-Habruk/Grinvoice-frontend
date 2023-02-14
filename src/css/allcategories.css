@@ -1,0 +1,26 @@
+
+.backgroundIphone{
+    margin-top: 10px;
+    border-radius: 3;
+    background-image: url('./backiphone.png');
+    width: 420px;
+    height: 840px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: auto;
+}
+
+
+.allCategoriesContainer{
+    position: absolute;
+    top: 5.5%;
+    z-index: 1;
+    background-color: rgb(214, 244, 233);
+    margin-left: 24px;
+    width: 368px;
+    height: 767px;
+    border-top-right-radius: 3px ;
+    border-top-left-radius: 3px ;
+    border-bottom-right-radius: 45px ;
+    border-bottom-left-radius: 45px ;
+}

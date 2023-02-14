@@ -1,4 +1,4 @@
-import React, { useState, useContext } from "react";
+import React, { useContext } from "react";
 import "../css/calculator.css";
 import { GrinvoiceContext } from "../context/GrinvoiceContext";
 
@@ -35,9 +35,7 @@ const Calculator = () => {
   const addNine = () => {
     price.length <= 7 &&  setPrice(price == 0 ? "9" : `${price}9`);
   };
-  const deleteLastOne = () => {
-    price.length <= 7 &&  setPrice(price.slice(0, -1) || "0");
-  };
+
   const addZero = () => {
     price.length <= 7 &&   setPrice(price == 0 ? "0" : `${price}0`);
   };
@@ -52,9 +50,13 @@ const Calculator = () => {
     }      
   };
   
+
+
   return (
     <>
+      <h2>Ticket price</h2>
       <div className="Calculator">
+
         <button onClick={addOne}> 1</button>
         <button onClick={addTwo}> 2</button>
         <button onClick={addThree}> 3</button>

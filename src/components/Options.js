@@ -1,4 +1,4 @@
-import React, { useContext, useState } from "react";
+import React, { useContext } from "react";
 import { useNavigate } from "react-router-dom";
 
 import "../css/navBar.css";
@@ -25,11 +25,12 @@ const Options = () => {
       <div        className="options"
         style={{
           width: "370px",
-          height: "700px",
+          height: "767px",
           background: "grey",
           opacity: "0.8",
           position: "absolute",
           zIndex: "0",
+          borderBottomLeftRadius:'45px'
         }}
       >
         <div
